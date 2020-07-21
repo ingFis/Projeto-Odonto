@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/fundo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:orientation="vertical"
+        tools:context=".LoginActivity"
+        android:background="@android:color/white"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acessar Conta"
+            android:textSize="23sp"
+            android:textColor="#3498DB"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:padding="5dp"
+            android:id="@+id/edit_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp"
+            android:hint="Email"
+            android:background="@drawable/dentista_login_activity"/>
+
+        <EditText
+            android:padding="5dp"
+            android:id="@+id/edit_text_senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="16dp"
+            android:inputType="numberPassword"
+            android:hint="Senha"
+            android:background="@drawable/dentista_login_activity"/>
+
+        <TextView
+            android:id="@+id/text_view_invalido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="Preencha os campos corretamente!"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_entrar"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Entrar"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/buttom_padrao_01"/>
+
+        <CheckBox
+            android:id="@+id/check_box_mantenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="7dp"
+            android:text="Mantenha-me conectado" />
+    </LinearLayout>
+
+</LinearLayout>
+
